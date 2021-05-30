@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onClick = "alert  = (button clicked)">click</button>
+    <button class = "changeable" onclick="document.querySelector('.changeable').innerHTML"/>
+    <script>
+        alert('hello');
+        const string1 = 'string';
+        const string2 = "string";
+        const string3 = `string`;
+
+        const number1 = 2626;
+        const number2 = 0.3;
+        const number3 = Math.PI;
+        const number4 = Number.NaN; // Not A Number
+        const number5 = Infinity;
+
+        const boolean1 = true; // 참
+        const boolean2 = false; // 거짓
+
+        const other1 = null; // 비어있는
+        const other2 = undefined; //정의되지 않은
+
+        console.log(typeof string1, typeof string2, typeof string3);
+        console.log(typeof number1, typeof number2, typeof number3, typeof number4, typeof number5);
+
+        console.log(typeof boolean1, typeof boolean2);
+        console.log(typeof other1, typeof other2);
+
+        console.log('==========================');
+        console.log(string1 == string2);
+        console.log(string2 != string3);
+
+        console.log(20 > 12);
+        console.log(13 < 5);
+
+        console.log(13 >= 13);
+        console.log(13 > 13);
+
+        console.log("0" == 0);
+        console.log("6" == 6);
+        console.log(false == 0);
+
+        console.log("0" === 0);
+        console.log("6" === 6);
+        console.log(false === 0);
+
+        // const input1 = prompt();
+
+        // if (input1 === "이름" ) {
+        //     console.log("보성아 사랑해");
+        // } else if (input1 === '학번') { 
+        //     console.log(2519);
+        // } else{
+        //     console.log("더 사랑하세요.");
+        // }
+
+        const object = {
+            "국어": 99,
+            "수학": 100,
+            "영어": 99.4,
+            "한국사": 97,
+            "아라비아어": "미응시",
+        };
+
+        console.log(object);
+        console.log(object["국어"], object["수학"], object["영어"]);
+        console.log(object.국어, object.수학, object.한국사);
+        
+        const array = [1, 2, '문자', null, undefined, Infinity];
+        console.log(array);
+        console.log(array[0], array[5]);
+
+        for (let i = 0; i < 10; i++) {
+            console.log(i);
+        }
+
+        for (const i of array){ //값이 돎.
+            console.log(i);
+        }
+
+        for (const i in array){ //키가 돎
+            console.log(i);
+        }
+
+        for (const i in object){ //키가 돎
+            console.log(i);
+        }
+    </script>
+</body>
+</html>
